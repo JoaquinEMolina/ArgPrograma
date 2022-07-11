@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*Barra navegadora */
+body {
+  font-family: 'Edu TAS Beginner', cursive;
+  padding: 90px 20px 0px;
+}
+
+.header {
+  background-color: #010831;
+  color: antiquewhite;
+  font-size: 20px;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+
+}
+
+.menu li{
+  list-style: none;
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 60px;
+  width: max-content;
+}
+.menu a {
+  color: antiquewhite;
+  text-decoration: none;
+  margin-right: 0;
+  transition: all .5s;
+  padding: 10px 20px;
+  border-radius: 40px;
+} 
+
+.logo{
+  max-width: 100%;
+  max-height: 100%;
+  
+
+}
+.brand {
+  line-height: 35.61px;
+  margin: 10px 30px;
+  margin-top: -7px;
+  width: 120px;
+  height: 36px;
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand span{
+  color:#237575;
+}
+
+
+.menu .active{
+  color: #beebeb;
+}
+
+.menu a:hover{
+  background-color: #237575;
+  color: #beebeb;
+}
+
+.nav-toggle {
+  color:white;
+  background:none;
+  border:none;
+  font-size:20px;
+  padding:10px 10px;
+  line-height: 30px;
+  cursor:pointer;
+
+
+
+  display:none;
+}
+/*nav responsive design */
+@media (max-width: 768px){
+  body {
+    padding-top: 70px;
+  }
+  .header {
+    height: 60px;
+  }
+  
+  .menu li{
+
+    line-height: 60px;
+  }
+  .menu {
+    font-size: 25px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0;
+    background-color: #010831;
+    position:fixed;
+    left:0;
+    top:60px;
+    
+    width: 100%;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left:100%;
+    transition:left 0.3s;
+  }
+  
+  
+  .brand {
+    margin: 0 10px;
+    line-height: 30px;
+    font-size:10px;  
+  }
+  
+  
+
+ 
+  .menu a:hover,
+  .menu .active {
+    background:none;
+    color: #4dc2c2; 
+  }
+  
+  .nav-toggle {
+    display:block;
+    margin: 0 20px;
+  }
+
+  .nav-menu_visible{
+    left:0;
+  }
+  .nav-toggle:focus:not(:focus-visible){
+    outline:none;
+  }
+}
+
+
+/*tarjetas */
+
+
+
+.cont-banner{
+  max-width: 992px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.cont-banner .cont-photo{
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  left: 0;
+}
